@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="helloQuery">
+    <input type="text" name="name" th:text="${name}">Name</input>
+    <input type="text" name="friend" th:text="${friend}" />Friend</input>
+    <input type="submit" text="Go!" />
+</form>
+</body>
+</html>
