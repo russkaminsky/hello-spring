@@ -33,7 +33,7 @@ public class HelloController {
     // Responds to get requests at http://localhost:8080/helloTemplate
     @GetMapping("helloTemplate")
     public String helloTemplate(Model model)    {
-
+        //Test change 1
         return "hello";
     }
 
