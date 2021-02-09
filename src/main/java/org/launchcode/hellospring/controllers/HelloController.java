@@ -37,6 +37,13 @@ public class HelloController {
         return "hello";
     }
 
+    // Responds to get requests at http://localhost:8080/helloTemplate2
+    @GetMapping("helloTemplate2")
+    public String helloTemplate2(Model model)    {
+        //Clone of helloTemplate
+        return "hello";
+    }
+
     // Responds to get requests at http://localhost:8080/helloQuery?name=test123&friend=MyFriendr
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST}, value = "helloQuery")
     @ResponseBody
